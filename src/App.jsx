@@ -6,9 +6,8 @@ import './App.css'
 import AddRegistration from './components/AddRegistration'
 import SearchRegistration from './components/SearchRegistration'
 import DeleteRegistration from './components/DeleteRegistration'
-import ViewRegistration from './components/viewRegistration'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import RegistrationView from './components/RegistrationView'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
