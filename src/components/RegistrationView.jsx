@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const API_URL= "https://raw.githubusercontent.com/anishpdm/demo-json-api/refs/heads/main/placement.json"
 
@@ -23,6 +24,7 @@ const ViewRegistration = () => {
     },[])
   return (
     <div>
+        <NavigationBar/>
          <div className="container mt-4">
 
                 <div className="card shadow">
@@ -56,7 +58,7 @@ const ViewRegistration = () => {
                                         (value,index) => {
                                             return(
                                                 <tr key={index}>
-                                            <td>{value.registrationNumber}</td>
+                                            <td>{value.rego}</td>
                                             <td>{value.fullName}</td>
                                             <td>{value.branch}</td>
                                             <td>{value.sslcMark}</td>

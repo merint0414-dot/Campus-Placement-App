@@ -1,8 +1,10 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 const AddRegistration = () => {
   return (
     <div>
+        <NavigationBar/>
         <div className="container mt-4">
                 <div className="card shadow">
                     <div className="card-header bg-primary text-white text-center">
