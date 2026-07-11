@@ -4,7 +4,7 @@ import NavigationBar from './NavigationBar'
 
 const API_URL= "https://raw.githubusercontent.com/anishpdm/demo-json-api/refs/heads/main/placement.json"
 
-const ViewRegistration = () => {
+const RegistrationView = () => {
     const [data,changeData] = useState([])
     const fetchData = () => {
         axios.get(API_URL)
@@ -58,7 +58,7 @@ const ViewRegistration = () => {
                                         (value,index) => {
                                             return(
                                                 <tr key={index}>
-                                            <td>{value.rego}</td>
+                                            <td>{value.regNo}</td>
                                             <td>{value.fullName}</td>
                                             <td>{value.branch}</td>
                                             <td>{value.sslcMark}</td>
@@ -87,4 +87,4 @@ const ViewRegistration = () => {
   )
 }
 
-export default ViewRegistration
+export default RegistrationView
