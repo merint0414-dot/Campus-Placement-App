@@ -1,0 +1,47 @@
+import React from 'react'
+import NavigationBar from './NavigationBar'
+
+const DeleteRegistration = () => {
+  return (
+    <div>
+        <NavigationBar/>
+        <div className="container mt-5">
+                <div className="row justify-content-center">
+                    <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                        <div className="card shadow">
+                            <div className="card-header bg-danger text-white text-center">
+                                <h3>Delete Registration</h3>
+                            </div>
+
+                            <div className="card-body">
+
+                                <label className="form-label">
+                                    Registration Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="Enter Registration Number"
+                                />
+
+                                <br />
+
+                                <button className="btn btn-danger">
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </div>
+  )
+}
+
+export default DeleteRegistration
